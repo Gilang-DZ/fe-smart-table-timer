@@ -7,12 +7,21 @@ export const TableStatus = {
 export type TableStatus =
   (typeof TableStatus)[keyof typeof TableStatus];
 
+// export interface Table {
+//   id: number;
+//   name: string;
+//   status: TableStatus;
+//   startTime?: number; // timestamp
+//   endTime?: number;   // timestamp
+// }
+
 export interface Table {
   id: number;
   name: string;
   status: TableStatus;
-  startTime?: number; // timestamp
-  endTime?: number;   // timestamp
+  startTime?: number;
+  endTime?: number;
+  customerName?: string; // Tambahin ini
 }
 
 export type AuthState = {
